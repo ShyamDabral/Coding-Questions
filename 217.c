@@ -1,13 +1,16 @@
 /*LeetCode question no. 217
-Date 21/12/2024 Time 11:47 A.M.*/
-bool containsDuplicate(int* nums, int numsSize) {
-    int i,j;
-    for(i=0;i<numsSize;i++){
-        for(j=i+1;j<numsSize;j++){
-            if (nums[i]==nums[j]){
+Date 21/12/2024 Time 12:38 A.M.
+Time complexity O(nlogn)*/
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        int n=nums.size();
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<n-1;i++){
+            if (nums[i]==nums[i+1]){
                 return true;
             }
         }
+        return false;
     }
-    return false;
-}
+};
