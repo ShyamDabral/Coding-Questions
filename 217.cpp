@@ -1,4 +1,4 @@
-/*LeetCode question no. 217
+/*LeetCode question no. 217 in C++
 Date 21/12/2024 Time 12:38 A.M.
 Time complexity O(nlogn) due to sort*/
 class Solution {
