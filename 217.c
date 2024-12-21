@@ -1,6 +1,6 @@
 /*LeetCode question no. 217
 Date 21/12/2024 Time 12:38 A.M.
-Time complexity O(nlogn)*/
+Time complexity O(nlogn) due to sort*/
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
